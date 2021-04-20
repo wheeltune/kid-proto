@@ -1,0 +1,14 @@
+syntax = 'proto3';
+
+message KeyLogEntry
+{
+    string key = 1;
+    uint32 code = 2;
+    uint64 time = 3;
+    uint64 duration = 4;
+};
+
+message KeyLog
+{
+    repeated KeyLogEntry entries = 1;
+};
