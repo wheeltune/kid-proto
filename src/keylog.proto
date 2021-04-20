@@ -10,5 +10,5 @@ message KeyLogEntry
 
 message KeyLog
 {
-    repeated KeyLogEntry entries = 1;
+    repeated KeyLogEntry entry = 1;
 };
