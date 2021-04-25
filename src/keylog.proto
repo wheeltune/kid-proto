@@ -1,11 +1,21 @@
 syntax = 'proto3';
 
+enum KeyLogType {
+    DOWN = 0;
+    UP = 1;
+}
+
 message KeyLogEntry
 {
-    string key = 1;
-    uint32 code = 2;
+    KeyLogType type = 1;
+
+    string key = 2;
     uint64 time = 3;
-    uint64 duration = 4;
+
+    bool repeated = 4;
+    uint8 location = 5;
+    uint32 which = 6;
+    string code = 7;
 };
 
 message KeyLog
