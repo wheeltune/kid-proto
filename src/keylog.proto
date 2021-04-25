@@ -12,8 +12,8 @@ message KeyLogEntry
     string key = 2;
     uint64 time = 3;
 
-    bool repeated = 4;
-    uint8 location = 5;
+    bool is_repeat = 4;
+    uint32 location = 5;
     uint32 which = 6;
     string code = 7;
 };
